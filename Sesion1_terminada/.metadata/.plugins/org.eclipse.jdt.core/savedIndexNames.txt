@@ -1,0 +1,10 @@
+INDEX VERSION 1.134+C:\Users\sergi\Desktop\UNI 1º\2º Cuatri\MP\Sesion1_terminada\.metadata\.plugins\org.eclipse.jdt.core
+2770966524.index
+125398772.index
+2781998337.index
+1411167221.index
+3072844516.index
+2137507871.index
+505091863.index
+1865797976.index
+2906288474.index

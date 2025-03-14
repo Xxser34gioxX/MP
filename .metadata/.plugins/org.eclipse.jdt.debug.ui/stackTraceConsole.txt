@@ -1,0 +1,9 @@
+java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at jeroquest.units.Barbarian.<init>(Barbarian.java:43)
+	at jeroquest.units.BarbarianWeaponTest.testWeaponAttribute(BarbarianWeaponTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

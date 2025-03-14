@@ -1,0 +1,15 @@
+
+public class Moto extends Automovil{
+
+	public Moto(int matricula, int numeroRuedas, int kilometraje) {
+		super(matricula, numeroRuedas, kilometraje);
+	}
+	
+	@Override
+	int cambioDeRuedas() {
+		
+		return 0;
+	}
+	
+
+}

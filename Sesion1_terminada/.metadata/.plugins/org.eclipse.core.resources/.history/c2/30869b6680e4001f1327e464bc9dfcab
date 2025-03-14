@@ -1,0 +1,32 @@
+
+public class CircleWithCentre {
+	private Circle c;
+	private Point p;
+	
+	public CircleWithCentre(int x, int y, int r) {
+		c = new Circle(r);
+		p = new Point(x, y);
+	}
+	
+	public double getRadio() {
+		return c.getRadius();
+	}
+	public void setRadio(Circle r) {
+		setRadio(r);
+	}
+	
+	public int getX() {
+		return p.getX();
+	}
+	public void setX(Point x) {
+		setX(x);
+	}
+	
+	public int getY() {
+		return p.getY();
+	}
+	public void setY(Point y) {
+		setY(y);
+	}
+	
+}

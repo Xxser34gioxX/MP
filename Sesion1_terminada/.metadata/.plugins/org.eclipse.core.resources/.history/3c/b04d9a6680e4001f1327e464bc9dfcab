@@ -1,0 +1,4 @@
+
+public class CircleWithCentreherencia extends Circle {
+	public CircleWithCentreherencia ()
+}

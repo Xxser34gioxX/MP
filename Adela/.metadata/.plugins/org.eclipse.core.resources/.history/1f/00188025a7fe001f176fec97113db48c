@@ -1,0 +1,13 @@
+
+public class Coche extends Automovil{
+
+	public Coche(int matricula, int numeroRuedas, int kilometraje) {
+		super(matricula, numeroRuedas, kilometraje);
+	}
+
+	@Override
+	int cambioDeRuedas() {
+		return 0;
+	}
+
+}

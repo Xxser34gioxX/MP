@@ -17,7 +17,7 @@ import jeroquest.utils.DynamicVectorPosition;
  * 
  */
 
-public abstract class Character extends Piece{
+public abstract class Character implements Piece{
 	// current attributes of a character
 	private int movement; // movement units per turn
 	private int attack; // total dices for an attack

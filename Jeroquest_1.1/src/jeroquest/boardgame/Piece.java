@@ -2,7 +2,7 @@ package jeroquest.boardgame;
 
 import jeroquest.utils.Position;
 
-public abstract class Piece {
+interface Piece {
 	private Position pos;
 
 	public Piece() {
@@ -14,18 +14,14 @@ public abstract class Piece {
 	 * 
 	 * @return the position in the board
 	 */
-	public Position getPosition() {
-		return pos;
-	}
+	public Position getPosition();
 
 	/**
 	 * Set the position of the piece in the board
 	 * 
 	 * @param pos new position of the piece in the board
 	 */
-	public void setPosition(Position pos) {
-		this.pos = pos;
-	}
+	public void setPosition(Position pos);
 
 	public abstract char toChar();
 }

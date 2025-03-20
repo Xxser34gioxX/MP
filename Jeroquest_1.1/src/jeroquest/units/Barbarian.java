@@ -1,6 +1,7 @@
 package jeroquest.units;
 
 import jeroquest.boardgame.Dice;
+import jeroquest.utils.Position;
 
 /**
  * Programming Methodology Practice. Jeroquest - An example of Object Oriented
@@ -58,6 +59,12 @@ public class Barbarian extends Character {
 	@Override
 	public char toChar() {
 		return 'B';
+	}
+
+	@Override
+	public void setPosition(Position pos) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

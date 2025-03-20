@@ -2,13 +2,7 @@ package jeroquest.boardgame;
 
 import jeroquest.utils.Position;
 
-interface Piece {
-	private Position pos;
-
-	public Piece() {
-		this.pos = null;
-	}
-
+public interface Piece {
 	/**
 	 * Get the position in the board
 	 * 

@@ -1,0 +1,28 @@
+package items;
+
+import jeroquest.boardgame.Piece;
+import jeroquest.utils.Position;
+
+public class Wall implements Piece{
+
+	public Wall() {
+		super();
+	}
+
+	public char toChar() {
+		return 0;
+	}
+
+	@Override
+	public Position getPosition() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setPosition(Position pos) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

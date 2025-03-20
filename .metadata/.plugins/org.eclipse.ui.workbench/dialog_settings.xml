@@ -5,17 +5,24 @@
 		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
 		</list>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
 		<section name="ImportExportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="854"/>
+			<item key="DIALOG_Y_ORIGIN" value="353"/>
+			<item key="DIALOG_WIDTH" value="875"/>
+			<item key="DIALOG_HEIGHT" value="550"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
 	<section name="ZipFileExportWizard">
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\sergi\Desktop\UNI 1º\1º Año\2º Cuatri\MP\Adela\JeroquestDemo.zip"/>
 			<item value="C:\Users\sergi\Desktop\UNI 1º\1º Año\2º Cuatri\MP\Jeroquest_9final.zip"/>
 			<item value="C:\Users\sergi\Desktop\UNI 1º\1º Año\2º Cuatri\MP\Jeroquest_9.zip"/>
 			<item value="C:\Users\sergi\Desktop\UNI 1º\1º Año\2º Cuatri\MP\Jeroquest_final.zip"/>
@@ -31,8 +38,8 @@
 	</section>
 	<section name="FileSystemImportWizard">
 		<section name="FileSystemImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="854"/>
-			<item key="DIALOG_Y_ORIGIN" value="353"/>
+			<item key="DIALOG_X_ORIGIN" value="212"/>
+			<item key="DIALOG_Y_ORIGIN" value="346"/>
 			<item key="DIALOG_WIDTH" value="995"/>
 			<item key="DIALOG_HEIGHT" value="796"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -44,7 +51,7 @@
 			<item key="DIALOG_Y_ORIGIN" value="425"/>
 			<item key="DIALOG_WIDTH" value="875"/>
 			<item key="DIALOG_HEIGHT" value="500"/>
-			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
 </section>

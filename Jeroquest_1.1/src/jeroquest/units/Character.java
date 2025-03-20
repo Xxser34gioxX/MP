@@ -1,11 +1,12 @@
 package jeroquest.units;
 
-import javax.swing.text.Position;
 
+import jeroquest.utils.Position;
 import jeroquest.boardgame.Board;
 import jeroquest.boardgame.Dice;
 import jeroquest.boardgame.Piece;
 import jeroquest.utils.DynamicVectorPosition;
+
 
 /**
  * Programming Methodology Practice.
@@ -24,6 +25,7 @@ public abstract class Character implements Piece{
 	private int defence; // total dices for defence
 	private int body; // body points
 	private String name; // name of the character
+	private Position pos;
 
 
 	/**
@@ -147,6 +149,14 @@ public abstract class Character implements Piece{
 		
 		return positions;
 	}
+	
+	public Position getPosition() {
+		return getPosition();
+	}
+	public void setPosition(Position pos) {
+		this.pos = getPosition();
+	}
+
 	/** 
 	 * Generate a printable String version of the object
 	 *  (override method)

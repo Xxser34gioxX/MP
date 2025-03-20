@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\sergi\Desktop\UNI 1º\1º Año\2º Cuatri\MP\Jeroquest_1.1"/>
 			<item value="C:\Users\sergi\Desktop\UNI 1º\1º Año\2º Cuatri\MP\Sesion10"/>
 			<item value="C:\Users\sergi\Desktop\UNI 1º\1º Año\2º Cuatri\MP\Jeroquest_1"/>
 		</list>
@@ -14,11 +15,13 @@
 			<item value=""/>
 		</list>
 		<section name="ExternalProjectImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="854"/>
-			<item key="DIALOG_Y_ORIGIN" value="353"/>
+			<item key="DIALOG_X_ORIGIN" value="212"/>
+			<item key="DIALOG_Y_ORIGIN" value="346"/>
 			<item key="DIALOG_WIDTH" value="875"/>
 			<item key="DIALOG_HEIGHT" value="1024"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
+	</section>
+	<section name="SmartImportWizard">
 	</section>
 </section>

@@ -1,0 +1,19 @@
+package items;
+
+public class Trap extends Item{
+	private boolean activated;
+
+	public Trap(boolean activated) {
+		
+		this.setActivated(activated);
+	}
+
+	public boolean isActivated() {
+		return activated;
+	}
+
+	public void setActivated(boolean activated) {
+		this.activated = activated;
+	}
+	
+}

@@ -1,0 +1,13 @@
+package items;
+import jeroquest.utils.Position;
+public class Piece {
+	private Position pos;
+
+	public Position getPos() {
+		return pos;
+	}
+
+	public void setPos(Position pos) {
+		this.pos = pos;
+	}
+}

@@ -1,0 +1,11 @@
+package items;
+
+public class Trap {
+	private boolean activated;
+
+	public Trap(boolean activated) {
+		super();
+		this.activated = activated;
+	}
+	
+}

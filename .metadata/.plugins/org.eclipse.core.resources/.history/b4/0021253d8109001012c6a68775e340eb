@@ -1,0 +1,33 @@
+/* Fichero: expresiones.lex */
+package lexico;
+import java.io.InputStreamReader;
+import java.lang.System;
+%%
+%char
+%public
+%standalone
+%full
+DIGITO = [0-9]
+LETRA = [a-zA-Z]
+LETRAa = [a-z]
+%%
+; {System.out.print(" FinSentencia");}
+\+ {System.out.print(" Mas");}
+\- {System.out.print(" Menos");}
+\* {System.out.print(" Por");}
+\/ {System.out.print(" Entre");}
+\( {System.out.print(" Abre-Par");}
+\) {System.out.print(" Cierra-Par");} 
+(\+\-)?{DIGITO}+ {System.out.print(" Entero("+yytext()+")");}
+(\+|\-)?{DIGITO}+\.{DIGITO}+ {System.out.print(" Real("+yytext()+")");}
+:= { System.out.print("Asigna"); }
+{LETRAa}[{LETRA}|{DIGITO}_]*[{LETRA}|{DIGITO}] | [a-z] { System.out.print("Variable("+yytext()+")"); }
+(\"|')(\+|\-|\*|\/|{DIGITO}|{LETRA}|" ")*(\"|')  ( {System.out.print("Cadena("+yytext()+")"); 
+SIMBOLO = [a-zA-Z0-9_.,;:+\-*/<>=(){}[\]!@#$%^&? ]
+LINEA = {SIMBOLO}+
+DOBLEBARRA = "//"
+
+[" "\t] { }
+imprime {System.out.print(" Palabra_reservada(imprime)");}
+\n {System.out.print(yytext());}
+. {System.out.print(" ERROR_Lexico");}

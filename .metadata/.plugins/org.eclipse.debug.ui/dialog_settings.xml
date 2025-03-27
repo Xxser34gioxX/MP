@@ -11,6 +11,17 @@
 	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
 		<item key="DIALOG_WIDTH" value="423"/>
 		<item key="DIALOG_HEIGHT" value="493"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="ExportLaunchConfigurations">
+		<item key="import_config_overwrite" value="false"/>
+		<item key="import_config_oldpath" value="C:/Users/sergi/Downloads/AnalisisLexico/AnalisisLexico"/>
+		<section name="ImportLaunchConfigurationsWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="854"/>
+			<item key="DIALOG_Y_ORIGIN" value="353"/>
+			<item key="DIALOG_WIDTH" value="875"/>
+			<item key="DIALOG_HEIGHT" value="578"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
 	</section>
 </section>

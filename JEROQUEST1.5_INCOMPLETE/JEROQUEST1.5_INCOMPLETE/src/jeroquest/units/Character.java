@@ -238,13 +238,15 @@ public abstract class Character implements Piece, GraphicalPiece {
 	 * Simulates an combat with other character, it does the attack and the defence.
 	 * If the attack kills the opponent it is moved out of the board
 	 * 
-	 * @param c character being attacked
+	 * @param c character being attacked	
 	 */
 	public void combat(Character c) { // attacks to c and c defends itself
 		int impacts = this.attack();
 		int wounds = c.defend(impacts);
 		if (!c.isAlive()) {
-			Controller.getInstance().getCurrentGame().getBoard().removePiece(c);
+			//Controller.getInstance().getCurrentGame().getBoard().removePiece(c);
+			Controller.getInstance().getCurrentGame().removeCharacter(c);
+
 		}
 		if (wounds > 0) {
 			Controller.getInstance().updateGraphicalPiece(c, String.format("%s cannot block %d impacts%s", c.getName(),
@@ -284,7 +286,15 @@ public abstract class Character implements Piece, GraphicalPiece {
 		DynamicVectorCharacters targets = validTargets();
 
 		if (targets.length() > 0) {
-			Character target = targets.get(Dice.roll(targets.length()) - 1);
+			Character target = targets.get(0);
+			
+			for (int i = 0; i < targets.length(); i++) {
+				
+				if (targets.get(i).getBody() > target.getBody())
+					target = targets.get(i);
+				
+			}
+			
 			String message = String.format("%s %s attacks to %s %s", getName(), getPosition(), target.getName(),
 					target.getPosition());
 			Controller.getInstance().updateGraphicalPiece(null, message);
@@ -351,26 +361,19 @@ public abstract class Character implements Piece, GraphicalPiece {
 	 * @return the valid targets for the character in its current position
 	 */
 	public DynamicVectorCharacters validTargets() {
-		// search targets
 		DynamicVectorCharacters validTargets = new DynamicVectorCharacters();
-		 int b;
-		    int i;
-		    Character[] character;
-		    for (i = (character = Controller.getInstance().getCurrentGame().getCharacters()).length, b = 0; b < i; ) {
-		      Character personaje = character[b];
-		      if (personaje.isAlive() && 
-		        isEnemy(personaje) && 
-		        isAtRange(personaje.getPosition()))
-		        validTargets.add(personaje); 
-		      b++;
-		    } 
-		// It needs to iterate the characters in the game and add the valid targets,
-		// that is:
-		// 1.- the ones alive
-		// 2.- that are enemies
-		// 3.- that are at attack range
-
-		return validTargets;
+	    int b;
+	    int i;
+	    Character[] arrayOfCharacter;
+	    for (i = (arrayOfCharacter = Controller.getInstance().getCurrentGame().getCharacters()).length, b = 0; b < i; ) {
+	      Character character = arrayOfCharacter[b];
+	      if (character.isAlive() && 
+	        isEnemy(character) && 
+	        isAtRange(character.getPosition()))
+	        validTargets.add(character); 
+	      b++;
+	    } 
+	    return validTargets;
 	}
 
 	/**
@@ -409,8 +412,17 @@ public abstract class Character implements Piece, GraphicalPiece {
 
 		DynamicVectorPosition positions = new DynamicVectorPosition();
 		Game currentGame = Controller.getInstance().getCurrentGame();
+		
+		Position position = this.getPosition().north();
+		if (currentGame.getBoard().freeSquare(position))
+			positions.add(position);
+		
+		position = this.getPosition().east();
+		if (currentGame.getBoard().freeSquare(position))
+			positions.add(position);
+		
 
-		Position position = this.getPosition().south();
+		position = this.getPosition().south();
 		if (currentGame.getBoard().freeSquare(position))
 			positions.add(position);
 

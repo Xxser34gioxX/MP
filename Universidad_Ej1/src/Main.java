@@ -12,6 +12,7 @@ public class Main {
 				new EDoctorado("Nombre EDoctorado 08", "DNI 08", 1500, 1800,  "Ingenier�a Inform�tica", pd),	
 				new Profesor("Nombre Profesor 01", "DNI 01", 30000, 6000, "Dpto 01"),
 				new Profesor("Nombre Profesor 02", "DNI 02", 40000, 10000, "Dpto 02"),
+				new Profer
 		};
 
 		double totalSaldo = saldoTotal(vU);
